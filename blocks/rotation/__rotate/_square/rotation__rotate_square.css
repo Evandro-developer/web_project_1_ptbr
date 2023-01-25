@@ -1,0 +1,8 @@
+@keyframes rotation__rotate_square {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(345deg);
+    }
+}
