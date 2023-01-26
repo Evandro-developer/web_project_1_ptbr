@@ -1,4 +1,4 @@
-.feynmam__link {
+.feynmam-link {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -12,6 +12,6 @@
   transition: opacity .8s ease;
 }
 
-.feynmam__link:hover {
+.feynmam-link:hover {
   opacity: .4; 
 }

@@ -10,7 +10,7 @@
   ---------------------Observação do código para considerações do revisor-------------------------
   Em relação ao validador de html no site The W3C Markup Validation Service:
   * Não aceitou a Tag Semântica <article> nas Sections Description e Oakley. Após alterar para <div> ...passou.
-  Quando retornar da revisão vou retornar para tag <article>.. 
+  Quando retornar da revisão altero p o padrão da tag <article>.. 
   Sem isso o validador não reconhece a "tag H2" e a página de entrega da Practicum não recebe meu projeto para revisão.
   ------------------------------------------------------------------------------------------------
   Em relação ao validador de html no site The W3C Markup Validation Service:
@@ -21,7 +21,7 @@
   Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
   * Arquivo: index.html, linha: 15. Ou o nome da classe logo__place_header não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
   Alterei logo__place_header para header__logo (não está assim no brief), mas o validador aceitou..
-  Mantive em blocks na pasta logo/__place/_header Quando retornar da revisão vou retornar p o padrão do brief.
+  Mantive em blocks na pasta logo/__place/_header Quando retornar da revisão altero p o padrão do brief.
   Sem isso o validador não reconhece o "bloco" e a página de entrega da Practicum não recebe meu projeto para revisão.
   ------------------------------------------------------------------------------------------------
   Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
@@ -36,13 +36,17 @@
   * Arquivo: index.html, linha: 150. Ou o nome da classe feynmam__title não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
   * Arquivo: index.html, linha: 151. Ou o nome da classe feynmam__subtitle não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
   Mas está de acordo com o Brief da entrega 1... recusado na validação BEM...
-  Deve estar dentro da margem de no máximo 5 erros permitidos.
+  Alterei a nomenclatura bloco__elemento feynmam__link/feynmam__image/feynmam__title/feynmam__subtitle corretas para:
+  a nomenclatura errada nome-duplo feynmam-link/feynmam-image/feynmam-title/feynmam-subtitle.
+  Após isso apareceu a mensagem ..."BEMissimo 🤌 (Everything good)"... afff...
+  Quando retornar da revisão altero p o padrão do brief no index.html e index.css.
   ------------------------------------------------------------------------------------------------  
   Sem as alterações a página de entrega de projeto da Practicum não envia e retorna a mensagem ..
   ..."Sua atribuição não foi aprovada nos testes automatizados. Atualize o código e envie-a novamente"...
   -------------------------------------------------------------------------------------------------
   O que eu pretendo saber é aonde posso melhorar ou corrigir o código... sempre é bom melhorar...  
-  Pedi até o e-mail para o tutor Juliano para eu mandar o trabalho zipado para a Practicum.
+  Pedi até o e-mail para o tutor Juliano ventola para eu mandar o trabalho zipado para a Practicum.
+  ------------------------------------------------------------------------------------------------
   obs. Não é uma crítica aos validadores. Eles são muito úteis. Apenas não validam o brief em uma ou outra parte.
 -->
   <title>Aprendendo a aprender</title>
@@ -181,13 +185,13 @@
         </div>
       </section>
       <section class="feynman">
-        <a href="#" class="feynmam__link">Mais →</a>
+        <a href="#" class="feynmam-link">Mais →</a>
         <img src="./images/feynman.png" alt="Uma foto
           de Richard Feynman, um físico quântico mundialmente conhecido.
           A Técnica Feynman deriva dos seus métodos de estudo quando
-          ele era um estudante em Princeton." class="feynmam__image">
-        <h2 class="feynmam__title">A Técnica de Feynman</h2>
-        <h3 class="feynmam__subtitle">Aprender sem esquecer</h3>
+          ele era um estudante em Princeton." class="feynmam-image">
+        <h2 class="feynmam-title">A Técnica de Feynman</h2>
+        <h3 class="feynmam-subtitle">Aprender sem esquecer</h3>
       </section>
       <section class="digits">
         <h2 class="section-title">Fatos e números</h2>
