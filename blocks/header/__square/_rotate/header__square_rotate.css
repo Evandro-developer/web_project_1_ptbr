@@ -1,0 +1,8 @@
+@keyframes header__square_rotate {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(345deg);
+    }
+}

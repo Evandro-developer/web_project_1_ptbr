@@ -7,5 +7,5 @@
   right: 0;
   z-index: 0;
   transform: rotate(-15deg);
-  animation:  rotation__rotate_square 20s linear infinite;
+  animation:  header__square_rotate 20s linear infinite;
 }

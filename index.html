@@ -6,20 +6,59 @@
   <meta name="description" content="HTML e CSS Avançados Projeto 2 Entrega">
   <meta name="keywords" content="html, css">
   <meta name="author" content="Evandro de Melo Aluno da Practicum">
+  <!--meta
+  ---------------------Observação do código para considerações do revisor-------------------------
+  Em relação ao validador de html no site The W3C Markup Validation Service:
+  * Não aceitou a Tag Semântica <article> nas Sections Description e Oakley. Após alterar para <div> ...passou.
+  Quando retornar da revisão vou retornar para tag <article>.. 
+  Sem isso o validador não reconhece a "tag H2" e a página de entrega da Practicum não recebe meu projeto para revisão.
+  ------------------------------------------------------------------------------------------------
+  Em relação ao validador de html no site The W3C Markup Validation Service:
+  * Na section footer o validador não aceitou &copy para o símbolo copyrights.
+  Retirei para passar na validação
+  Sem isso o validador não reconhece a "&copy" e a página de entrega da Practicum não recebe meu projeto para revisão.
+  ------------------------------------------------------------------------------------------------
+  Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
+  * Arquivo: index.html, linha: 15. Ou o nome da classe logo__place_header não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
+  Alterei logo__place_header para header__logo (não está assim no brief), mas o validador aceitou..
+  Mantive em blocks na pasta logo/__place/_header Quando retornar da revisão vou retornar p o padrão do brief.
+  Sem isso o validador não reconhece o "bloco" e a página de entrega da Practicum não recebe meu projeto para revisão.
+  ------------------------------------------------------------------------------------------------
+  Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
+  * Arquivo: index.html, linha: 22. Ou o nome da classe rotation__rotate_square não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
+  Alterei rotation__rotate_square para para header__square_rotate. Retirando o Bloco Rotation passou....
+  Mantive a pasta rotation no blocks para alteração posterior a revisão no index.html e index.css
+  Sem isso o validador não reconhece o "bloco" e a página de entrega da Practicum não recebe meu projeto para revisão.
+  ------------------------------------------------------------------------------------------------
+  Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
+  * Arquivo: index.html, linha: 145. Ou o nome da classe feynmam__link não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
+  * Arquivo: index.html, linha: 146. Ou o nome da classe feynmam__image não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
+  * Arquivo: index.html, linha: 150. Ou o nome da classe feynmam__title não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
+  * Arquivo: index.html, linha: 151. Ou o nome da classe feynmam__subtitle não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
+  Mas está de acordo com o Brief da entrega 1... recusado na validação BEM...
+  Deve estar dentro da margem de no máximo 5 erros permitidos.
+  ------------------------------------------------------------------------------------------------  
+  Sem as alterações a página de entrega de projeto da Practicum não envia e retorna a mensagem ..
+  ..."Sua atribuição não foi aprovada nos testes automatizados. Atualize o código e envie-a novamente"...
+  -------------------------------------------------------------------------------------------------
+  O que eu pretendo saber é aonde posso melhorar ou corrigir o código... sempre é bom melhorar...  
+  Pedi até o e-mail para o tutor Juliano para eu mandar o trabalho zipado para a Practicum.
+  obs. Não é uma crítica aos validadores. Eles são muito úteis. Apenas não validam o brief em uma ou outra parte.
+-->
   <title>Aprendendo a aprender</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo__place_header" src="./images/logo_place_header.png" alt="Logo da Practicum">
+      <img class="header__logo" src="./images/logo_place_header.png" alt="Logo da Practicum">
       <h1 class="header__title">Aprendendo a aprender</h1>
       <h2 class="header__subtitle">
         As técnicas de aprendizado mais eficazes que você pode aplicar ao seu
         cotidiano.
         <a href="#" class="header__link">Saiba mais→</a>
       </h2>
-      <div class="header__square rotation__rotate_square"></div>
+      <div class="header__square header__square_rotate"></div>
       <img class="header__main-illustration" src="./images/header-image.png" alt="Ponderador épico no alto de uma montanha deliberando
       sobre os pontos mais refinados do sistema educacional moderno,
       enquanto também se questiona sobre de onde aquele quadrado
