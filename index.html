@@ -5,64 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HTML e CSS Avançados Projeto 2 Entrega">
   <meta name="keywords" content="html, css">
-  <meta name="author" content="Evandro de Melo Aluno da Practicum">
-  <!--meta
-  ---------------------Observação do código para considerações do revisor-------------------------
-  Em relação ao validador de html no site The W3C Markup Validation Service:
-  * Não aceitou a Tag Semântica <article> nas Sections Description e Oakley. Após alterar para <div> ...passou.
-  Quando retornar da revisão altero p o padrão da tag <article>.. 
-  Sem isso o validador não reconhece a "tag H2" e a página de entrega da Practicum não recebe meu projeto para revisão.
-  ------------------------------------------------------------------------------------------------
-  Em relação ao validador de html no site The W3C Markup Validation Service:
-  * Na section footer o validador não aceitou &copy para o símbolo copyrights.
-  Retirei para passar na validação
-  Sem isso o validador não reconhece a "&copy" e a página de entrega da Practicum não recebe meu projeto para revisão.
-  ------------------------------------------------------------------------------------------------
-  Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
-  * Arquivo: index.html, linha: 15. Ou o nome da classe logo__place_header não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
-  Alterei logo__place_header para header__logo (não está assim no brief), mas o validador aceitou..
-  Mantive em blocks na pasta logo/__place/_header Quando retornar da revisão altero p o padrão do brief.
-  Sem isso o validador não reconhece o "bloco" e a página de entrega da Practicum não recebe meu projeto para revisão.
-  ------------------------------------------------------------------------------------------------
-  Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
-  * Arquivo: index.html, linha: 22. Ou o nome da classe rotation__rotate_square não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
-  Alterei rotation__rotate_square para para header__square_rotate. Retirando o Bloco Rotation passou....
-  Mantive a pasta rotation no blocks para alteração posterior a revisão no index.html e index.css
-  Sem isso o validador não reconhece o "bloco" e a página de entrega da Practicum não recebe meu projeto para revisão.
-  ------------------------------------------------------------------------------------------------
-  Em relação ao validador BEM no site https://nglazov.github.io/bem-validator-page/
-  * Arquivo: index.html, linha: 145. Ou o nome da classe feynmam__link não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
-  * Arquivo: index.html, linha: 146. Ou o nome da classe feynmam__image não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
-  * Arquivo: index.html, linha: 150. Ou o nome da classe feynmam__title não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
-  * Arquivo: index.html, linha: 151. Ou o nome da classe feynmam__subtitle não corresponde às diretrizes da metodologia BEM ou o bloco está indentado incorretamente.
-  Mas está de acordo com o Brief da entrega 1... recusado na validação BEM...
-  Alterei a nomenclatura bloco__elemento feynmam__link/feynmam__image/feynmam__title/feynmam__subtitle corretas para:
-  a nomenclatura errada nome-duplo feynmam-link/feynmam-image/feynmam-title/feynmam-subtitle.
-  Após isso apareceu a mensagem ..."BEMissimo 🤌 (Everything good)"... afff...
-  Quando retornar da revisão altero p o padrão do brief no index.html e index.css.
-  ------------------------------------------------------------------------------------------------  
-  Sem as alterações a página de entrega de projeto da Practicum não envia e retorna a mensagem ..
-  ..."Sua atribuição não foi aprovada nos testes automatizados. Atualize o código e envie-a novamente"...
-  -------------------------------------------------------------------------------------------------
-  O que eu pretendo saber é aonde posso melhorar ou corrigir o código... sempre é bom melhorar...  
-  Pedi até o e-mail para o tutor Juliano ventola para eu mandar o trabalho zipado para a Practicum.
-  ------------------------------------------------------------------------------------------------
-  obs. Não é uma crítica aos validadores. Eles são muito úteis. Apenas não validam o brief em uma ou outra parte.
--->
+  <meta name="author" content="Evandro de Melo Aluno da Practicum"> 
   <title>Aprendendo a aprender</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img class="header__logo" src="./images/logo_place_header.png" alt="Logo da Practicum">
+      <img class="logo__place_header" src="./images/logo_place_header.png" alt="Logo da Practicum">
       <h1 class="header__title">Aprendendo a aprender</h1>
       <h2 class="header__subtitle">
         As técnicas de aprendizado mais eficazes que você pode aplicar ao seu
         cotidiano.
         <a href="#" class="header__link">Saiba mais→</a>
       </h2>
-      <div class="header__square header__square_rotate"></div>
+      <div class="header__square rotation__rotate_square"></div>
       <img class="header__main-illustration" src="./images/header-image.png" alt="Ponderador épico no alto de uma montanha deliberando
       sobre os pontos mais refinados do sistema educacional moderno,
       enquanto também se questiona sobre de onde aquele quadrado
@@ -70,7 +27,7 @@
     </header>
     <main class="content">
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">O maior problema da educação</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -98,7 +55,7 @@
               aprendizado eficaz.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="techniques">
         <h2 class="section-title">Aprender Técnicas</h2>
@@ -166,7 +123,7 @@
         </div>
       </section>
       <section class="oakley">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">A história de Barbara Oakley.</h2>
           <p class="two-columns__main-text two-columns__paragraph">
             A matemática não veio naturalmente para Barbara na infância. Ela
@@ -182,16 +139,16 @@
             outras pessoas podem obter rapidamente, dando assim uma visão mais
             profunda e abrangente do assunto.
           </p>
-        </div>
+        </article>
       </section>
       <section class="feynman">
-        <a href="#" class="feynmam-link">Mais →</a>
+        <a href="#" class="feynmam__link">Mais →</a>
         <img src="./images/feynman.png" alt="Uma foto
           de Richard Feynman, um físico quântico mundialmente conhecido.
           A Técnica Feynman deriva dos seus métodos de estudo quando
-          ele era um estudante em Princeton." class="feynmam-image">
-        <h2 class="feynmam-title">A Técnica de Feynman</h2>
-        <h3 class="feynmam-subtitle">Aprender sem esquecer</h3>
+          ele era um estudante em Princeton." class="feynmam__image">
+        <h2 class="feynmam__title">A Técnica de Feynman</h2>
+        <h3 class="feynmam__subtitle">Aprender sem esquecer</h3>
       </section>
       <section class="digits">
         <h2 class="section-title">Fatos e números</h2>
@@ -368,7 +325,7 @@
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <img src="./images/logo_place_footer.png" alt="Logo footer" class="logo logo_place_footer">
-          <p class="footer__author">2023 Evandro de Melo</p>
+          <p class="footer__author">&copy2023 Evandro de Melo</p>
         </div>
         <div class="footer__column footer__column_content_about">
           <h2 class="footer__column-heading">Sobre Practicum by Yandex</h2>
