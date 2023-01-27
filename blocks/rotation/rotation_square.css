@@ -1,4 +1,4 @@
-@keyframes rotation__rotate_square {
+@keyframes rotation_square {
     from {
         transform: rotate(-15deg);
     }

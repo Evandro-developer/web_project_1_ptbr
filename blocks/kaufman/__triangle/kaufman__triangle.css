@@ -5,5 +5,5 @@
   top: 0;
   right: -124px;
   z-index: 0;
-  animation:  rotation__rotate_triangle 20s linear infinite;
+  animation:  rotation_triangle 20s linear infinite;
 }
