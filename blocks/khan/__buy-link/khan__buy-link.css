@@ -5,7 +5,10 @@
   text-decoration: none;
   color: #2f80ed;
   margin: 0;
+  padding: 0;
   opacity: 1;
+  -webkit-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
 }
 
