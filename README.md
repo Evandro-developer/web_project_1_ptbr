@@ -10,5 +10,5 @@ Organização das pastas de arquivos e imagens pelo método BEM - Bloco/Elemento
 Importação de estilos com o atributo @import das pastas de arquivos e imagens.
 Compatibilidade cross-browser e prefixos de fornecedores.
 Utilização de linguagem html com semântica adequada aos seus devidos propósitos.
-Link para o GitHub: https://github.com/Evandro-developer/web_project_1_ptbr.github.io
+Link para o GitHub: https://evandro-developer.github.io/web_project_1_ptbr/
 -----------------------------------------------------------------------------------
