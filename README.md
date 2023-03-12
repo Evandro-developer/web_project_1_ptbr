@@ -1,5 +1,5 @@
-Project 1 "Tema Aprendendo a Aprender"
------------------------------------------------------------------------------------
+## Project 1 "Tema Aprendendo a Aprender"
+
 Funcionalidades:
 Possui elementos de animação em frames utilizando keyframes para rotação de imagens.
 Incorporação de vídeos, utilizando recursos de css3 e html5.
@@ -11,4 +11,5 @@ Importação de estilos com o atributo @import das pastas de arquivos e imagens.
 Compatibilidade cross-browser e prefixos de fornecedores.
 Utilização de linguagem html com semântica adequada aos seus devidos propósitos.
 Link para o GitHub: https://evandro-developer.github.io/web_project_1_ptbr/
------------------------------------------------------------------------------------
+
+---
